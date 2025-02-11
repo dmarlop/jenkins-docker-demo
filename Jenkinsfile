@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clonar código') {
             steps {
-                git branch: 'main', url: 'https://github.com/tu-usuario/jenkins-docker-demo.git'
+                git branch: 'main', url: 'https://github.com/dmarlop/jenkins-docker-demo.git'
             }
         }
         stage('Construir imagen Docker') {
