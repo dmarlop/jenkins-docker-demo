@@ -6,7 +6,7 @@ const port = 3000;
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.end('¡Hola Mundo desde Docker y Jenkins y esto es una prueba en tiempo real!\n');
+  res.end('¡Hola Mundo desde Docker y Jenkins y esto es una prueba en tiempo real! otra prueba\n');
 });
 
 server.listen(port, hostname, () => {
