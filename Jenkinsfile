@@ -1,6 +1,8 @@
 pipeline {
     agent any
-
+    triggers {
+        githubPush()
+    }
     stages {
         stage('Clonar código') {
             steps {
@@ -22,3 +24,4 @@ pipeline {
         }
     }
 }
+
