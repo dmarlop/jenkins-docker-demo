@@ -12,7 +12,7 @@ pipeline {
                     branches: [[name: '*/main']],
                     doGenerateSubmoduleConfigurations: false,
                     extensions: [[$class: 'CleanBeforeCheckout']],
-                    userRemoteConfigs: [[url: 'https://github.com/dmarlop/jenkins-docker-demo.git']]
+                    userRemoteConfigs: [[url: 'https://github.com/dmarlop/jenkins-docker-demo']]
                 ])
                 // Imprimimos el hash del commit para confirmar la versión
                 sh 'git rev-parse HEAD'
